@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsNest</title>
+    <link rel="styleSheet"href="Style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" >
+                <img src="asserts/logo.png" class="company-logo"alt="logo">
+            </a>
+
+             <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li class="link-items nav-item box-transition" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="link-items nav-item box-transition" id="sports " onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="link-items nav-item box-transition" id="Entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>  
+                    <!-- <li class="link-items nav-item box-transition" id="politics"onclick="onNavItemClick('politics')">Politics</li>   -->
+
+
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text"class="search-inputs box-transition"id="search-text"placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex"id="cards-container">
+   
+        </div>
+    </main>
+    <template id="template-news-card">
+       <div class="card box-transition">
+                <div class="card-header">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.eK3wAvlnTGjC3T-ioB-xZgHaEG?pid=Api&P=0&h=180" alt=""id="news-img">
+                <div class="card-content">
+                    <h3 id="news-title">this is title</h3>
+                    <h6 id="news-source" class="news-source"> end gaget 03/08/2023</h6>
+                    <div class="news-desc"id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere quo reiciendis nihil eos earum, fuga sapiente totam eaque voluptatibus?
+                    </div>
+                </div>
+            </div>
+            </div>     
+
+    </template>
+    <script src="Script.js"></script>
+
+</body>
+</html>
